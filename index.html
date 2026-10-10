@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculadora - Sala de Aplicaciones</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="portada-fija">
+      <div class="portada-contenedor">
+        <span class="etiqueta-subtitulo">Calculadora con 7 aplicaciones</span>
+        <h1 class="titulo-principal">CALCULADORA CREATIVA</h1>
+        <p class="texto-scroll">
+          Desliza o selecciona una de las 7 aplicaciones que deseas operar
+        </p>
+
+        <nav class="selector-salas">
+          <a href="#sala-1" class="circulo-sala" data-nombre="Acrónimos"
+            ><span>01</span></a
+          >
+          <a
+            href="#sala-2"
+            class="circulo-sala"
+            data-nombre="Sucesión de Fibonacci o factorial"
+            ><span>02</span></a
+          >
+          <a
+            href="#sala-3"
+            class="circulo-sala"
+            data-nombre="Promedio, media y moda"
+            ><span>03</span></a
+          >
+          <a
+            href="#sala-4"
+            class="circulo-sala"
+            data-nombre="Unión, intersección y diferencia de conjuntos"
+            ><span>04</span></a
+          >
+          <a
+            href="#sala-5"
+            class="circulo-sala"
+            data-nombre="Convertir un número entero en binario"
+            ><span>05</span></a
+          >
+          <a
+            href="#sala-6"
+            class="circulo-sala"
+            data-nombre="Un árbol binario: Recorridos preorden, inorden y postorden"
+            ><span>06</span></a
+          >
+          <a
+            href="#sala-7"
+            class="circulo-sala"
+            data-nombre="Calculadora de operaciones básicas"
+            ><span>07</span></a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="recorrido-principal">
+      <!-- SALA 01 -->
+      <section class="escenario-3d" id="sala-1">
+        <div class="prisma-tarjeta">
+          <div class="contenido-profundo">
+            <span class="numero-sala">APLICACIÓN 01 / 07</span>
+            <h2 class="titulo-sala">Convertir una frase en su acrónimo</h2>
+            <p class="descripcion-corta">
+              Convierte una frase larga como Portable Network Graphics en su
+              acrónimo (PNG).
+            </p>
+            <div class="panel-aplicacion">
+              <form
+                class="formulario-estilo"
+                action="procesar.php"
+                method="post"
+              >
+                <input type="hidden" name="accion" value="calcular_acronimo" />
+                <label for="frase"
+                  >Frase que deseas convertir a acrónimo:</label
+                >
+                <input
+                  type="text"
+                  id="frase"
+                  name="frase"
+                  placeholder="Ej: Liquid-crystal display"
+                  required
+                />
+                <button type="submit" class="boton-accion">Calcular</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SALA 02 -->
+      <section class="escenario-3d" id="sala-2">
+        <div class="prisma-tarjeta">
+          <div class="contenido-profundo">
+            <span class="numero-sala">APLICACIÓN 02 / 07</span>
+            <h2 class="titulo-sala">Sucesión de Fibonacci o factorial</h2>
+            <p class="descripcion-corta">
+              Ingresa el número y selecciona la operación que deseas obtener.
+            </p>
+            <div class="panel-aplicacion">
+              <form
+                class="formulario-estilo"
+                action="procesar.php"
+                method="post"
+              >
+                <input type="hidden" name="accion" value="calcular_sala2" />
+
+                <label for="numero_sala2">Ingrese el número:</label>
+                <input
+                  type="number"
+                  id="numero_sala2"
+                  name="numero_sala2"
+                  min="0"
+                  max="90"
+                  required
+                />
+
+                <label for="operacion_sala2">Operación:</label>
+                <select id="operacion_sala2" name="operacion_sala2" required>
+                  <option value="fibonacci">Sucesión de Fibonacci</option>
+                  <option value="factorial">Factorial</option>
+                </select>
+
+                <button type="submit" class="boton-accion">Calcular</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--APLICACIÓN 3-->
+      <section class="escenario-3d" id="sala-3">
+        <div class="prisma-tarjeta">
+          <div class="contenido-profundo">
+            <span class="numero-sala">APLICACIÓN 03 / 07</span>
+            <h2 class="titulo-sala">Promedio, media y moda</h2>
+            <p class="descripcion-corta">
+              Ingresa una serie de números reales (Tú eliges la cantidad de N°)
+            </p>
+            <div class="panel-aplicacion">
+              <form
+                class="formulario-estilo"
+                action="procesar.php"
+                method="post"
+              >
+                <input type="hidden" name="accion" value="calcular_sala3" />
+
+                <label for="numeros_sala3"
+                  >Ingresa los números separados por espacio o punto y
+                  coma:</label
+                >
+                <input
+                  type="text"
+                  id="numeros_sala3"
+                  name="numeros_sala3"
+                  placeholder="Ej: 4.5 8 2.5 8 10"
+                  required
+                />
+
+                <button type="submit" class="boton-accion">Calcular</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- APLICACIÓN 4 -->
+      <section class="escenario-3d" id="sala-4">
+        <div class="prisma-tarjeta">
+          <div class="contenido-profundo">
+            <span class="numero-sala">APLICACIÓN 04 / 07</span>
+            <h2 class="titulo-sala">
+              Unión, intersección y diferencia de conjuntos
+            </h2>
+            <p class="descripcion-corta">
+              Dado dos conjuntos A y B, los cuales son una serie de números
+              enteros se calculará la unión, intersección y diferencia de ambos
+              conjuntos (A-B y B-A).
+            </p>
+            <div class="panel-aplicacion">
+              <form
+                class="formulario-estilo"
+                action="procesar.php"
+                method="post"
+              >
+                <input type="hidden" name="accion" value="calcular_sala4" />
+                <label for="campo_sala4">Entrada de datos:</label>
+                <input
+                  type="text"
+                  id="campo_sala4"
+                  name="campo_sala4"
+                  placeholder="Ingresa los datos requeridos"
+                  required
+                />
+                <button type="submit" class="boton-accion">Calcular</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- APLICACIÓN 5 -->
+      <section class="escenario-3d" id="sala-5">
+        <div class="prisma-tarjeta">
+          <div class="contenido-profundo">
+            <span class="numero-sala">APLICACIÓN 05 / 07</span>
+            <h2 class="titulo-sala">Convertir un número entero en binario</h2>
+            <p class="descripcion-corta">
+              Descripción breve del quinto ejercicio práctico.
+            </p>
+            <div class="panel-aplicacion">
+              <form
+                class="formulario-estilo"
+                action="procesar.php"
+                method="post"
+              >
+                <input type="hidden" name="accion" value="calcular_sala5" />
+                <label for="campo_sala5">Entrada de datos:</label>
+                <input
+                  type="text"
+                  id="campo_sala5"
+                  name="campo_sala5"
+                  placeholder="Ingresa los datos requeridos"
+                  required
+                />
+                <button type="submit" class="boton-accion">Calcular</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- APLICACIÓN 6 -->
+      <section class="escenario-3d" id="sala-6">
+        <div class="prisma-tarjeta">
+          <div class="contenido-profundo">
+            <span class="numero-sala">APLICACIÓN 06 / 07</span>
+            <h2 class="titulo-sala">
+              Un árbol binario: Recorridos preorden, inorden y postorden
+            </h2>
+            <p class="descripcion-corta">
+              Debes ingresar mínimo dos de los recorridos, ejemplo: preorden -
+              inorden, preorden - postorden, inorden - postorden, y con esa
+              información construiremos el árbol. Si ingresas los tres a la vez,
+              por defecto se debe calcular el árbol con preorden - inorden.
+            </p>
+            <div class="panel-aplicacion">
+              <form
+                class="formulario-estilo"
+                action="procesar.php"
+                method="post"
+              >
+                <input type="hidden" name="accion" value="calcular_sala6" />
+                <label for="campo_sala6">Entrada de datos:</label>
+                <input
+                  type="text"
+                  id="campo_sala6"
+                  name="campo_sala6"
+                  placeholder="Ingresa los datos requeridos"
+                  required
+                />
+                <button type="submit" class="boton-accion">Calcular</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- APLICACIÓN 7 -->
+      <section class="escenario-3d" id="sala-7">
+        <div class="prisma-tarjeta">
+          <div class="contenido-profundo">
+            <span class="numero-sala">APLICACIÓN 07 / 07</span>
+            <h2 class="titulo-sala">Calculadora de operaciones básicas</h2>
+            <p class="descripcion-corta">
+              Ingresa números enteros o decimales y selecciona las operaciones
+              básicas: suma, multiplicación, división, resta, porcentaje.
+            </p>
+            <div class="panel-aplicacion">
+              <form
+                class="formulario-estilo"
+                action="procesar.php"
+                method="post"
+              >
+                <input type="hidden" name="accion" value="calcular_sala7" />
+                <label for="campo_sala7">Entrada de datos:</label>
+                <input
+                  type="text"
+                  id="campo_sala7"
+                  name="campo_sala7"
+                  placeholder="Ingresa los datos requeridos"
+                  required
+                />
+                <button type="submit" class="boton-accion">Calcular</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
