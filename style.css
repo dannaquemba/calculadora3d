@@ -252,3 +252,36 @@ body {
   opacity: 1;
   margin-top: 25px;
 }
+
+.caja-resultado {
+  margin-top: 15px;
+  padding: 12px;
+  background: rgba(197, 159, 89, 0.9);
+  border-left: 3px solid #c5a059;
+  border-radius: 4px;
+}
+
+.etiqueta-resultado {
+  font-size: 0.8rem;
+  color: #f8f6f6;
+  margin-bottom: 3px;
+}
+
+.valor-resultado {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.pagina-resultado .prisma-tarjeta {
+  transform: none;
+  cursor: default;
+}
+
+.boton-volver {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+}
